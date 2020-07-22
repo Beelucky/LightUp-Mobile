@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+// very easy to keep control of event****
+
+<script src="LightUp.js"></script>
+
+<script>
+var lightUp = new LightUp();
+
+document.addEventListener('mousedown', function enableLightUp() {
+  document.removeEventListener('mousedown', enableLightUp, false);
+  lightUp.enable();
+}, false);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
